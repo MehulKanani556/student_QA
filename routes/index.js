@@ -3,7 +3,7 @@ var router = express.Router();
 var controller = require('../controller/usercontroller');
 
 // admin
-router.get('/admin',controller.select);
+router.get('/',controller.select);
 router.post('/admin',controller.insert);
 router.post('/login',controller.login);
 
